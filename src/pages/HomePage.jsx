@@ -2,7 +2,7 @@ import './header.css';
 import './index.css';
 import { useState, useEffect } from "react";
 import { useContext } from "react";
-import { UserContext } from "../context/UserContext";
+import { UserContext } from "../context/userContext";
 import api from '../config/axios';
 import { Link } from "react-router-dom";
 
