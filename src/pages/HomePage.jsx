@@ -268,7 +268,7 @@ export function HomePage() {
                         <li onClick={() => window.location.href = "login"}>Login / Register</li>
                         <li onClick={() => window.location.href = "checkout"}>Cart</li>
                         <li >
-                            <a target="_blank" rel="noopener noreferrer" href="https://shopnest-admin-pbliudn8w-bugslayer03s-projects.vercel.app/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://shopnest-admin-pbliudn8w-bugslayer03s-projects.vercel.app">
                                 Admin Login
                             </a>
                         </li>
