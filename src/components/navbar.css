@@ -1,0 +1,63 @@
+/* .adminLogo{
+    width: 300px;
+    max-width: 20%;
+    height: 120px;
+    
+} */
+
+.adminLogo {
+    /* width: 250px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; */
+
+    width: 200px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* .logoutbtn{
+    width: 150px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+} */
+
+.logoutbtn {
+    /* width: 120px;
+    height: 40px; */
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logoutbtn:hover{
+    background-color: rgb(32, 32, 184);
+    transform: translateY(-2px);
+}
+
+/* .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
