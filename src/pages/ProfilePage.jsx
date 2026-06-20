@@ -1,7 +1,7 @@
 // src/pages/ProfilePage.jsx
 import './profile.css'
 import { useEffect, useContext, useState } from "react";
-import { UserContext } from '../context/UserContext';
+import { UserContext } from '../context/userContext';
 import { Link } from 'react-router-dom';
 
 export function ProfilePage() {
