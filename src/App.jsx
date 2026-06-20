@@ -13,7 +13,7 @@ import { ContactUs } from './pages/ContactUs'
 import { LoginPage } from './pages/LoginPage'
 import { RegisterPage } from './pages/RegisterPage'
 import { ProfilePage } from './pages/ProfilePage'
-import { ProtectedRoute } from './components/protectedRoute'
+import { ProtectedRoute } from './components/ProtectedRoute'
 import './App.css'
 
 function App() {
