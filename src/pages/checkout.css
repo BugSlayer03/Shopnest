@@ -1,0 +1,367 @@
+.checkout-header {
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.checkout-header .header-content {
+  width: 100%;
+  max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.checkout-header .checkout-header-left-section {
+  width: 200px;
+}
+
+.checkout-header .logo {
+  height: 40px;
+  margin-top: 0px;
+}
+
+@media (max-width: 575px) {
+  .checkout-header .checkout-header-left-section {
+    width: auto;
+  }
+
+  .checkout-header .logo {
+    display: none;
+  }
+
+  .checkout-header .mobile-logo {
+    display: inline-block;
+    height: 26px;
+  }
+}
+
+.checkout-header .checkout-header-middle-section {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-header .return-to-home-link {
+  color: #2F80B7;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .checkout-header .checkout-header-middle-section {
+    font-size: 20px;
+    margin-right: 60px;
+  }
+
+  .checkout-header .return-to-home-link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .checkout-header .checkout-header-middle-section {
+    margin-right: 5px;
+  }
+}
+
+.checkout-page {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 140px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkout-page .page-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.checkout-page .checkout-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 350px;
+  column-gap: 10px;
+
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .main {
+    max-width: 500px;
+  }
+
+  .checkout-page .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.checkout-page .cart-item-container,
+.checkout-page .payment-summary {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.customer-details {
+  background: white;
+  /* border: 1px solid rgb(222, 222, 222); */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.customer-details h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.checkout-input,
+.checkout-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.checkout-input:focus,
+.checkout-textarea:focus {
+  outline: none;
+  border-color: darkblue;
+  /* box-shadow: 0 0 5px rgba(255, 216, 20, 0.5); */
+}
+
+.checkout-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.checkout-input::placeholder,
+.checkout-textarea::placeholder {
+  color: #777;
+}
+
+.checkout-page .cart-item-container {
+  margin-bottom: 12px;
+}
+
+.checkout-page .payment-summary {
+  padding-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .payment-summary {
+    grid-row: 1;
+    margin-bottom: 12px;
+  }
+}
+
+.checkout-page .delivery-date {
+  color: #2F80B7;
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+.checkout-page .cart-item-details-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 25px;
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .cart-item-details-grid {
+    grid-template-columns: 100px 1fr;
+    row-gap: 30px;
+  }
+}
+
+.checkout-page .product-image {
+  max-width: 100%;
+  max-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkout-page .product-name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.checkout-page .product-price {
+
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.checkout-page .product-quantity .link-primary {
+  margin-left: 3px;
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .delivery-options {
+    grid-column: 1 / span 2;
+  }
+}
+
+.checkout-page .delivery-options-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.checkout-page .delivery-option {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.checkout-page .delivery-option-input {
+  margin: 3px 5px 0px 0px;
+  cursor: pointer;
+}
+
+.checkout-page .delivery-option-date {
+
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.checkout-page .delivery-option-price {
+  color: rgb(120, 120, 120);
+  font-size: 15px;
+}
+
+.checkout-page .payment-summary-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.checkout-page .payment-summary-row {
+  display: grid;
+  /* 1fr auto; means the width of the 2nd column will be
+     determined by the elements inside the column (auto).
+     The 1st column will take up the remaining space. */
+  grid-template-columns: 1fr auto;
+
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.checkout-page .payment-summary-money {
+  text-align: right;
+}
+
+.checkout-page .subtotal-row .payment-summary-money {
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.checkout-page .subtotal-row div {
+  padding-top: 9px;
+}
+
+.checkout-page .total-row {
+  color: #2F80B7;
+  font-weight: 700;
+  font-size: 18px;
+
+  border-top: 1px solid rgb(222, 222, 222);
+  padding-top: 18px;
+}
+
+.checkout-page .place-order-button {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  background-color: #2F80B7;
+  margin-top: 20px;
+  margin-bottom: 19px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.update-quantity-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.update-quantity-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.delete-quantity-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.delete-quantity-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.green-spread {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: spreadGreen 1s forwards;
+  z-index: 9999;
+}
+
+@keyframes spreadGreen {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(200);
+  }
+}
+
+.success-screen {
+  height: 100vh;
+  background: #4CAF50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}

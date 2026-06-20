@@ -1,0 +1,292 @@
+/* profile.css */
+
+.profile-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+.profile-page-sidebar {
+    min-height: 100vh;
+    display: flex;
+    /* justify-content:center; */
+    flex-direction: column;
+    align-items: center;
+    /* background:#f5f5f5; */
+    background-color: lightskyblue;
+    width: 20%;
+}
+
+.profile-card {
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.greeting {
+    width: 90%;
+    background-color: white;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.user-img {
+    height: 30px;
+    width: 30px;
+}
+
+.user-sdbr {
+    width: 90%;
+    /* background-color: white; */
+    height: 50px;
+    margin: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.my-order-link {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.my-order-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.user-sdbr:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.profile-card h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.logout-btn {
+    width: 90%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background: #dc3545;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.profile-page-content {
+    width: 80%;
+    min-height: 100vh;
+    margin-left: 10px;
+}
+
+.gift-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 40px;
+    height: 100%;
+}
+
+.gift-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gift-form h2 {
+    margin-bottom: 10px;
+}
+
+.gift-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.gift-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gift-preview {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: gray; */
+}
+
+.gift-card-image {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 60%;
+}
+
+.coupons{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px;
+    margin-top: 30px;
+}
+
+.coupons img{
+    width: 50%;
+    height: 35%;
+    margin: 30px;
+}
+
+.couponstext{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.ratings{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px;
+    margin-top: 30px;
+}
+
+.ratings img{
+    width: 50%;
+    height: 35%;
+    margin: 30px;
+}
+
+.ratingstext{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.notifications{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px;
+    margin-top: 30px;
+}
+
+.notifications img{
+    width: 50%;
+    height: 35%;
+    margin: 30px;
+}
+
+.notificationstext{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.wishlist{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px;
+    margin-top: 30px;
+}
+
+.wishlist img{
+    width: 50%;
+    height: 35%;
+    margin: 30px;
+}
+
+.wishlisttext{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.active-sidebar-item{
+    background-color: black;
+    color: white;
+}
+
+.profile-form-container {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.profile-form-container h2 {
+    margin-bottom: 10px;
+}
+
+.profile-form-container input,
+.profile-form-container select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.save-profile-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-profile-btn:hover {
+    background-color: rgb(32, 32, 184);
+}
