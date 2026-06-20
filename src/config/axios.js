@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const backendurl = "https://shopnest-backend-nmkhf16p0-bugslayer03s-projects.vercel.app";
+const backendurl = "https://shopnest-backend-six.vercel.app";
 
 const api = axios.create({
     baseURL: backendurl
