@@ -664,3 +664,12 @@ ul li a {
 .loginbtn:hover {
   background-color: rgb(32, 32, 184);
 }
+
+.loading-message {
+    min-height: 60vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 24px;
+    font-weight: 500;
+}
