@@ -160,7 +160,7 @@ export function CheckoutPage() {
             return;
         }
 
-        if (phone.length !== 10) {
+        if (!/^\d{10}$/.test(phone)) {
             toast.error("Enter a valid 10-digit phone number");
             return;
         }
