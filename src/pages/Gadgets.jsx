@@ -19,40 +19,65 @@ import { ProductPage } from "./ProductPage";
 export function Gadgets() {
 
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    // useEffect(() => {
+
+    //     const fetchProducts = async () => {
+
+    //         try {
+
+    //             const response =
+    //                 await api.get("/api/product/list");
+
+    //             if(response.data.success){
+
+    //                 const gadgets =
+    //                     response.data.products.filter(
+    //                         product =>
+    //                         product.category === "Gadgets"
+    //                     );
+
+    //                 setProducts(gadgets);
+    //             }
+
+    //         } catch(error){
+    //             console.log(error);
+    //         }
+    //     };
+
+    //     fetchProducts();
+
+    // }, []);
 
     useEffect(() => {
-
         const fetchProducts = async () => {
-
             try {
-
-                const response =
-                    await api.get("/api/product/list");
-
-                if(response.data.success){
-
+                const response = await api.get("/api/product/list");
+    
+                if (response.data.success) {
                     const gadgets =
                         response.data.products.filter(
-                            product =>
-                            product.category === "Gadgets"
+                            product => product.category === "Gadgets"
                         );
-
+    
                     setProducts(gadgets);
                 }
-
-            } catch(error){
+            } catch (error) {
                 console.log(error);
+            } finally {
+                setLoading(false);
             }
         };
-
+    
         fetchProducts();
-
-    }, []);
+}, []);
 
     return (
         <ProductPage
             title="Gadgets"
             products={products}
+            loading={loading}
         />
     );
 }
