@@ -3,7 +3,7 @@ import './index.css';
 import { useState,useEffect } from "react";
 import api from "../config/axios";
 
-export function ProductPage({ title, products }) {
+export function ProductPage({ title, products, loading }) {
     const [cartCount, setCartCount] = useState(0);
 
     useEffect(() => {
@@ -153,7 +153,7 @@ export function ProductPage({ title, products }) {
             </div>
 
             <div className="products">
-                <div className="products-grid">
+                {/* <div className="products-grid">
                     {products.map((product, index) => (
                         <ProductCard
                             key={index}
@@ -161,7 +161,23 @@ export function ProductPage({ title, products }) {
                             addToCart={addToCart}
                         />
                     ))}
-                </div>
+                </div> */}
+
+                {loading ? (
+                    <div className="loading-message">
+                        Loading...
+                    </div>
+                ) : (
+                    <div className="products-grid">
+                        {products.map((product, index) => (
+                            <ProductCard
+                                key={index}
+                                product={product}
+                                addToCart={addToCart}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </>
     );
